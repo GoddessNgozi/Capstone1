@@ -11,6 +11,7 @@
 
 header {
     box-shadow: 0 3px 10px 0 #4b4b4b73;
+    width: 100%;
 }
 
 .top-nav {
@@ -20,9 +21,14 @@ header {
 .bottom-nav {
     display: none;
     background-color: #ffffff;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 20px;
     padding-top: 15px;
     font-size: 35px;
@@ -31,28 +37,26 @@ header {
     opacity: 0.7;
 }
 
+#nav-mobile {
+    display: none;
+}
+
+.cancel {
+    display: none;
+}
+
 .headline {
     margin-left: 20px;
     margin-right: 20px;
-   
-    padding-top: 150px;
+    padding-top: 60px;
 }
 
-/*.headline::after{
-    content: "";
-    background-image: url(images/checkmate-bg.jpg);
+.headliner {
+    background-image: url(images/checkmate.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    height: 100vh;
-    z-index: -1;
-}*/
+}
 
 .hello {
     color: #ec5242;
@@ -61,27 +65,35 @@ header {
 }
 
 .headline h1 {
-    color: #ec5242;
+    color: #EC5242;
     margin-top: 10px;
-    font-size: 60px;
-    font-family: "cocogoose", serif;
+    font-size: 10vw;
+    font-family: cocogoose, sans-serif;
 }
 
 .description {
     border: 2px solid #ffffff;
     margin-top: 20px;
-    padding: 10px;
+    padding: 30px 20px 30px 20px;
     margin-bottom: 20px;
+    background-color: rgb(247, 247, 248);
+    text-align: center;
+    border-image: initial;
 }
 
 .date {
-    font-weight: 700;
-    font-size: large;
-    color: #272a31;
+    margin-top: 30px;
+    font-size: 1.84rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
 }
 
 .venue {
     margin-top: 10px;
+    font-size: 1.12rem;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    padding-bottom: 5%;
 }
 
 .main-program {
@@ -99,10 +111,12 @@ header {
     color: white;
     font-family: 'Lato', sans-serif;
     margin-bottom: 10px;
+    font-size: 23px;
+    font-weight: 500;
 }
 
 .rule {
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     width: 35px;
     border: 1px solid #ec5242;
 }
@@ -110,26 +124,33 @@ header {
 .program-title {
     color: #ec5242;
     font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .program-list {
-    display: grid;
-    grid-template-columns: 10% 20% 70%;
+    display: flex;
+    justify-content: center;
     border: 1px solid #333336;
     background-color: #9e9c9c50;
-    padding: 20px 0 10px 10px;
+    padding: 20px 0px 20px 20px;
     align-items: center;
     margin-bottom: 10px;
 }
 
+.program-list li {
+    margin-right: 20px;
+}
+
 .icon {
-    font-size: 25px;
+    font-size: 28px;
     color: white;
 }
 
  .program-desc {
     color: white;
     font-family: 'Lato', sans-serif;
+    font-size: 15px;
 }
 
 .join-event {
@@ -144,6 +165,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 30px 20px 30px 20px;
 }
 
@@ -166,9 +188,12 @@ h5 {
 .player {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 30px;
-    flex: 50%;
+    flex: 50%;    
+}
+
+.see-event {
+    display: none;
 }
 
 /*.player-pic {
@@ -186,9 +211,22 @@ h5 {
     width: 110px;
     height: 110px;
     margin-right: 15px;
-    /*position: absolute;
-    bottom: 0;
-    right: 0;*/
+}
+
+.player-pic::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-size: 80px;
+    background-image: url(images/checker.jpeg);
+    position: absolute;
+    margin-left: -18px;
+    margin-top: -18px;
+    z-index: -1;
+}
+
+.player {
+    margin-left: 18px;
 }
 
 .ruler {
@@ -199,6 +237,8 @@ h5 {
 
 .players h4 {
     margin-bottom: 10px;
+    font-size: 23px;
+    font-weight: 500;
 }
 
 .player-details p {
@@ -215,6 +255,10 @@ h5 {
     border-radius: 5px;
     padding-top: 12px;
     padding-bottom: 12px;
+}
+
+footer {
+    visibility: hidden;
 }
 
 @media (min-width: 768px) {
@@ -243,7 +287,6 @@ h5 {
         align-items: center;
         justify-content: space-between;
         box-shadow: 0 0px #888888;
-        padding: 7px 135px 7px;
     }
     
     .logo {
@@ -264,7 +307,7 @@ h5 {
     }
     
     .highlight {
-        border: 3px solid #ec5242;
+        border: 4px solid #ec5242;
         padding: 5px 10px 5px 10px;
     }
     
@@ -274,8 +317,146 @@ h5 {
 
     .chess-players {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
     }
     
+    .headline h1 {
+        color: #EC5242;
+        margin-top: 10px;
+        font-size: 60px;
+        font-family: "cocogoose", serif;
+    }
+
+    .headline {
+        height: 100vh;
+    }
+
+    .player-details {
+        width: 50%;
+    }
+    
+    .program-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .programs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon {
+        margin-top: 15px;
+    }
+    
+     .program-desc {
+        margin-top: 7px;
+    }
+
+    .program-title {
+        margin-top: 35px;
+    }
+
+    .program {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
+    .join-event {
+        margin-top: 70px;
+        display: none;
+    }
+
+    .see-event {
+        display: flex;
+        text-decoration: underline;
+        color: #ffffff;
+        margin-top: 60px;
+    }
+
+    .players {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .partners {
+        background-color: #333336;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    
+    .partners h6 {
+        color: #888888;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 40px;
+    }
+    
+    .partners hr {
+        width: 35px;
+        border: 1px solid #EC5242;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .partners div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    
+    .partner {
+        margin-right: 30px;
+        color: #625e5e;
+        font-size: 40px;
+    }
+    
+    .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .copyright p {
+        margin-left: 50px;
+    }
+
+    .more {
+        display: none;
+    }
+
+    footer {
+        visibility: visible;
+    }
+
+    .description {
+        width: 60%;
+    }
+
+    .headline {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .headline h1 {
+        font-family: cocogoose, sans-serif;
+    }
+
+    .player {
+        margin-left: 0px;
+    }
 }
