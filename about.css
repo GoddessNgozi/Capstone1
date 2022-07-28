@@ -563,16 +563,16 @@ h5 {
 
     .copyright {
         background-color: #333336;
-        height: 250px;
+        height: 200px;
         color: #ffffff;
     }
 
     .copyright p {
-        font-size: 23px;
+        font-size: 15px;
     }
 
     .copyright .logo {
-        font-size: 80px;
+        font-size: 70px;
         color: #ffffff;
     }
 }
