@@ -10,7 +10,6 @@
 }
 
 header {
-    box-shadow: 0 3px 10px 0 #4b4b4b73;
     width: 100%;
 }
 
@@ -20,29 +19,61 @@ header {
 
 .bottom-nav {
     display: none;
-    background-color: #ffffff;
-    padding-bottom: 10px;
-    padding-top: 10px;
 }
 
-.mobile-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.hamburger {
     padding-left: 20px;
     padding-top: 15px;
-    font-size: 35px;
     padding-bottom: 15px;
-    background-color: #d3d3d3;
-    opacity: 0.7;
+    background-color: #ffffff;
+    font-size: 50px;
 }
 
-#nav-mobile {
-    display: none;
+#mobile-menu {
+    visibility: hidden;
+    background-color: #ffffff;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #333336;
+    gap: 35px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 30px;
+}
+
+.nav-mobile a {
+    color: black;
+}
+
+.nav-mobile .high {
+    color: #e2e1e1;
+}
+
+.highlighter {
+    color: #d3d3d3;
+    background-color: #ec5242;
+    border: 1px solid #c2665e;
+    font-size: 30px;
+    width: 300px;
+    padding: 30px;
+    margin-top: 70px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .cancel {
-    display: none;
+    font-size: 50px;
+    margin-left: 5%;
+    margin-top: 2.5%;
 }
 
 .headline {
@@ -67,7 +98,7 @@ header {
 .headline h1 {
     color: #EC5242;
     margin-top: 10px;
-    font-size: 10vw;
+    font-size: 50px;
     font-family: cocogoose, sans-serif;
 }
 
@@ -83,7 +114,7 @@ header {
 
 .date {
     margin-top: 30px;
-    font-size: 1.84rem;
+    font-size: 1.54rem;
     font-weight: 900;
     color: rgb(255, 255, 255);
 }
@@ -150,7 +181,7 @@ header {
  .program-desc {
     color: white;
     font-family: 'Lato', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .join-event {
@@ -239,6 +270,7 @@ h5 {
     margin-bottom: 10px;
     font-size: 23px;
     font-weight: 500;
+    font-family: 'Lato', sans-serif;
 }
 
 .player-details p {
@@ -262,7 +294,11 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .mobile-menu {
+    header {
+        box-shadow: 0 3px 10px 0 #4b4b4b73;
+    }
+    
+    .hamburger {
         display: none;
     }
 
@@ -280,6 +316,7 @@ footer {
     
     .top-nav a {
         color: white;
+        font-size: 13px;
     }
     
     .bottom-nav {
@@ -287,10 +324,18 @@ footer {
         align-items: center;
         justify-content: space-between;
         box-shadow: 0 0px #888888;
+        align-items: center;
+        position: unset;
+        background-color: #ffffff;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-left: 7%;
+        margin-right: 7%;
     }
     
     .logo {
         font-size: 40px;
+        color: black;
     }
     
     .menu {
@@ -304,15 +349,19 @@ footer {
     
     .menu-list a {
         color: #272a31;
+        font-size: 15px;
     }
     
-    .highlight {
-        border: 4px solid #ec5242;
-        padding: 5px 10px 5px 10px;
-    }
     
     .highlight a {
         color: #ec5242;
+        white-space: nowrap;
+        text-decoration: none;
+        border: 3px solid #ec5242;
+        font-size: 15px;
+        padding-inline: 0.2rem;
+        padding-block: 0.2rem;
+        white-space: nowrap;
     }
 
     .chess-players {
@@ -327,12 +376,8 @@ footer {
     .headline h1 {
         color: #EC5242;
         margin-top: 10px;
-        font-size: 60px;
+        font-size: 50px;
         font-family: "cocogoose", serif;
-    }
-
-    .headline {
-        height: 100vh;
     }
 
     .player-details {
@@ -344,12 +389,15 @@ footer {
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 5px;
+        font-family: 'Lato', sans-serif;
     }
 
     .programs {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
+        gap: 3px;
+        font-size: 30px;
     }
 
     .icon {
@@ -444,12 +492,14 @@ footer {
     }
 
     .description {
-        width: 60%;
+        width: 70%;
     }
 
     .headline {
         margin-left: 100px;
         margin-right: 100px;
+        padding-top: 70px;
+        padding-bottom: 50px;
     }
 
     .headline h1 {

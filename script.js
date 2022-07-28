@@ -1,22 +1,26 @@
-// MENU
-const openMenu = document.getElementById('menu-mobile');
+
+const hamburger = document.getElementById('hamburger');
 const closeMenu = document.getElementById('close');
-const menu = document.getElementById('nav-mobile');
+const menu = document.getElementById('mobile-menu');
 
 function openMobileMenu() {
-  menu.style.display = 'block';
-  openMenu.style.display = 'none';
-  closeMenu.style.display = 'block';
+  menu.style.visibility = 'visible';
+  hamburger.style.visibility = 'hidden';
+  closeMenu.style.visibility = 'visible';
 }
 
 function closeMobileMenu() {
-  menu.style.display = 'none';
-  openMenu.style.display = 'block';
-  closeMenu.style.display = 'none';
+  menu.style.visibility = 'hidden';
+  hamburger.style.visibility = 'visible';
+  closeMenu.style.visibility = 'hidden';
 }
 
-openMenu.addEventListener('click', openMobileMenu);
+hamburger.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', closeMobileMenu);
+
+
+
+
 
 
 // FEATURED PLAYERS
@@ -25,28 +29,28 @@ const chessPlayers = document.querySelector('.chess-players');
 // Players Dynamic data
 const featuredPlayers = [
   {
-    name: 'Yochai Benkler',
+    name: 'Fabiano Caruana',
     intro:
-      'Benkler studies commons based peer production and published his serminal book The Wealth of Networks in 2006',
+      'Fabiano Luigi Caruana is an Italian-American chess player. A chess prodigy, Caruana became a grandmaster at the age of 14 years, 11 months, and 20 days—the youngest grandmaster in the history of both Italy and the United States at the time.',
     description:
-      'Benkman professor of Enterpreneurial Studies at Harvard Law School.',
-    image: 'images/images.jpeg',
+      'American grandmaster and one of the best chess players in the world. Learn more about his chess achievements.',
+    image: 'images/kenny.jpeg',
   },
   {
     name: 'Yochai Benkler',
     intro:
-      'Benkler studies commons based peer production and published his serminal book The Wealth of Networks in 2006',
+      'Viswanathan "Vishy" Anand is an Indian chess grandmaster and a five-time world chess champion. He became the first grandmaster from India in 1988, and is one of the few players to have surpassed an Elo rating of 2800, a feat he first achieved in 2006.',
     description:
-      'Benkman professor of Enterpreneurial Studies at Harvard Law School.',
-    image: 'images/images.jpeg',
+      'Indian chess master who won the Fédération Internationale des Échecs',
+    image: 'images/440px-Viswanathan_Anand_(2016)_(cropped).jpeg',
   },
 
   {
-    name: 'Yochai Benkler',
+    name: 'Magnus Carlsen',
     intro:
-      'Benkler studies commons based peer production and published his serminal book The Wealth of Networks in 2006',
+      'Sven Magnus Øen Carlsen is a Norwegian chess grandmaster who is the reigning five-time World Chess Champion. He is also a three-time World Rapid Chess Champion and five-time World Blitz Chess',
     description:
-      'Benkman professor of Enterpreneurial Studies at Harvard Law School.',
+      '5-time World Chess Champion & highest ranked chess player in the world.',
     image: 'images/images.jpeg',
   },
   {
@@ -55,7 +59,7 @@ const featuredPlayers = [
       'Benkler studies commons based peer production and published his serminal book The Wealth of Networks in 2006',
     description:
       'Benkman professor of Enterpreneurial Studies at Harvard Law School.',
-    image: 'images/images.jpeg',
+    image: 'images/Sergey_Karjakin.jpeg',
   },
   {
     name: 'Yochai Benkler',
@@ -63,15 +67,15 @@ const featuredPlayers = [
       'Benkler studies commons based peer production and published his serminal book The Wealth of Networks in 2006',
     description:
       'Benkman professor of Enterpreneurial Studies at Harvard Law School.',
-    image: 'images/images.jpeg',
+    image: 'images/kenny.jpeg',
   },
   {
-    name: 'Yochai Benkler',
+    name: 'Viswanathan Anand',
     intro:
-      'Benkler studies commons based peer production and published his serminal book The Wealth of Networks in 2006',
+      'Viswanathan "Vishy" Anand is an Indian chess grandmaster and a five-time world chess champion. He became the first grandmaster from India in 1988, and is one of the few players to have surpassed an Elo rating of 2800, a feat he first achieved in 2006.',
     description:
-      'Benkman professor of Enterpreneurial Studies at Harvard Law School.',
-    image: 'images/images.jpeg',
+      'Indian chess master who won the Fédération Internationale des Échecs',
+    image: 'images/440px-Viswanathan_Anand_(2016)_(cropped).jpeg',
   },
 ];
 // variable to hold the injected html players
