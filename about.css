@@ -444,7 +444,6 @@ h5 {
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    margin-bottom: 40px;
 }
 
 .copyright p {
@@ -493,6 +492,7 @@ h5 {
 
     .logo {
         font-size: 40px;
+        color: black;
     }
     
     .menu {
@@ -562,7 +562,7 @@ h5 {
     }
 
     .copyright {
-        background-color: #272a31;
+        background-color: #333336;
         height: 250px;
         color: #ffffff;
     }
@@ -573,5 +573,6 @@ h5 {
 
     .copyright .logo {
         font-size: 80px;
+        color: #ffffff;
     }
 }
