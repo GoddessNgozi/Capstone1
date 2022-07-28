@@ -25,6 +25,14 @@ header {
     padding-top: 10px;
 }
 
+.hamburger {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    font-size: 40px;
+}
+
 .mobile-menu {
     display: flex;
     justify-content: space-between;
@@ -51,33 +59,11 @@ header {
     padding-top: 60px;
 }
 
-.headliner {
-   /* background-image: url(images/checkmate.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;*/
-}
-
-/*.headline::after{
-    content: "";
-    background-image: url(images/checkmate-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    height: 100vh;
-    z-index: -1;
-}*/
-
 .hello {
     color: #ec5242;
     font-size: 25px;
     font-family: 'Lato', sans-serif;
+    margin-top: 5rem;
 }
 
 .headline h1 {
@@ -247,7 +233,6 @@ h5 {
 }
 
 .headliner {
-    padding-top: 7rem;
     display: flex;
     height: auto;
     flex-direction: column;
@@ -258,10 +243,12 @@ h5 {
 }
 
 .headliner h1 {
-    font-family: 'COCOGOOSE', sans-serif;
-    font-size: 30px;
+    font-family: 'cocogoose', sans-serif;
     color: #ec5242;
     margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 50px;
+    text-align: center;
 }
 
 .about-focus {
@@ -280,7 +267,7 @@ h5 {
     color: #ffffff;
     width: 80%;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .email {
@@ -288,7 +275,7 @@ h5 {
     text-decoration: underline;
     color: #ffffff;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .tournament {
@@ -299,12 +286,11 @@ h5 {
     margin-left: 2%;
 }
 
-.tournament h4 {
+.tournament h2 {
     margin-bottom: 10px;
     margin-top: 40px;
-    font-size: 35px;
-    font-weight: 550;
     color: #272a31;
+    font-family: 'Lato', sans-serif;
 }
 
 .tournament hr {
@@ -318,8 +304,7 @@ h5 {
 }
 
 .big-logo {
-    font-size: 100px;
-    
+    font-size: 120px;
 }
 
 .big-div {
@@ -349,12 +334,11 @@ h5 {
     border-color: #ec5242;
 }
 
-.past-events h3 {
-    font-size: 35px;
-    font-weight: 550;
+.past-events h2 {
     margin-top: 40px;
     margin-bottom: 10px;
     color: #272a31;
+    font-family: 'Lato', sans-serif;
 }
 
 .event-desc {
@@ -406,7 +390,7 @@ h5 {
 }
 
 .partners h6 {
-    color: #fff;
+    color: rgb(173, 171, 171);
     font-size: 20px;
     font-weight: 500;
     margin-top: 40px;
@@ -444,6 +428,10 @@ h5 {
 }
 
 @media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
     .mobile-menu {
         display: none;
     }
@@ -462,20 +450,23 @@ h5 {
     
     .top-nav a {
         color: white;
+        font-size: 13px;
     }
     
     .bottom-nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        box-shadow: 0 0px #888888;
+        align-items: center;
+        position: unset;
+        background-color: #ffffff;
+        padding-bottom: 10px;
+        padding-top: 10px;
         margin-left: 7%;
         margin-right: 7%;
     }
 
-    .bottom-nav a {
-        color: black;
-    }
-    
     .logo {
         font-size: 40px;
     }
@@ -491,6 +482,7 @@ h5 {
     
     .menu-list a {
         color: #272a31;
+        font-size: 15px;
     }
     
     .highlight {
@@ -511,18 +503,28 @@ h5 {
     .headline h1 {
         color: #EC5242;
         margin-top: 10px;
-        font-size: 60px;
-        font-family: "cocogoose", serif;
+        font-size: 50px;
+        font-family: 'cocogoose', sans-serif;
     }
 
     /*ABOUT PAGE*/
 
-    .event-card1 p {
-        margin-right: 30px;
+    .about-focus {
+        width: 63%;
+        padding: 4% 2% 4% 2%;
+        font-size: 1.1rem;
     }
 
-    .head-liner {
-        height: 100vh;
+    .tournament p {
+        width: 65%;
+    }
+
+    .big-div {
+        width: 45%;
+    }
+
+    .event-card1 p {
+        margin-right: 30px;
     }
 
     .event-pics {
@@ -530,5 +532,23 @@ h5 {
         flex-direction: row;
         justify-content: space-between;
         gap: 10px;
-    }  
+    }
+
+    .partners {
+        display: none;
+    }
+
+    .copyright {
+        background-color: #272a31;
+        height: 250px;
+        color: #ffffff;
+    }
+
+    .copyright p {
+        font-size: 23px;
+    }
+
+    .copyright .logo {
+        font-size: 80px;
+    }
 }
