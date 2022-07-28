@@ -6,7 +6,7 @@
   text-decoration: none;
   margin: 0%;
   box-sizing: border-box;
-  font-family: 'cocogoose', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -98,8 +98,8 @@ header {
 .headline h1 {
   color: #ec5242;
   margin-top: 10px;
-  font-size: 50px;
-  font-family: cocogoose, sans-serif;
+  font-family: 'cocogoose', sans-serif;
+  font-size: 8vw;
 }
 
 .description {
@@ -355,7 +355,7 @@ footer {
     color: #ec5242;
     margin-top: 10px;
     font-size: 50px;
-    font-family: 'cocogoose', serif;
+    font-family: 'cocogoose', sans-serif;
   }
 
   .player-details {
@@ -437,24 +437,21 @@ footer {
     margin-bottom: 40px;
   }
 
-  .partners div {
+  .partner {
+    color: #625e5e;
+    font-size: 2.5vw;
+    gap: 30px;
+    margin-bottom: 70px;
     display: flex;
     align-items: center;
-    margin-bottom: 70px;
-  }
-
-  .partner {
-    margin-right: 30px;
-    color: #625e5e;
-    font-size: 40px;
   }
 
   .copyright {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    height: 150px;
+    background-color: rgb(242, 240, 240);
   }
 
   .copyright p {

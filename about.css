@@ -270,7 +270,7 @@ h5 {
   color: #ec5242;
   margin-bottom: 40px;
   margin-top: 10px;
-  font-size: 50px;
+  font-size: 8vw;
   text-align: center;
 }
 
@@ -425,23 +425,25 @@ h5 {
   margin-bottom: 40px;
 }
 
-.partners div {
+.partner {
   display: flex;
   align-items: center;
-  margin-bottom: 70px;
-}
-
-.partner {
-  margin-right: 30px;
   color: #625e5e;
-  font-size: 40px;
+  font-size: 6vw;
+  gap: 20px;
+  margin-bottom: 70px;
 }
 
 .copyright {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  height: 100px;
+}
+
+.copyright .logo {
+  font-size: 55px;
+  color: rgb(5, 5, 5);
 }
 
 .copyright p {
@@ -565,7 +567,7 @@ h5 {
 
   .copyright {
     background-color: #333336;
-    height: 200px;
+    height: 150px;
     color: #fff;
   }
 
@@ -574,7 +576,7 @@ h5 {
   }
 
   .copyright .logo {
-    font-size: 70px;
-    color: #fff;
+    font-size: 50px;
+    color: white;
   }
 }
