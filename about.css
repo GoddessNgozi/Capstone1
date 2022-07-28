@@ -45,12 +45,51 @@ header {
     opacity: 0.7;
 }
 
-#nav-mobile {
-    display: none;
+#mobile-menu {
+    visibility: hidden;
+    background-color: #ffffff;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #333336;
+    gap: 35px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 30px;
+}
+
+.nav-mobile a {
+    color: black;
+}
+
+.nav-mobile .high {
+    color: #e2e1e1;
 }
 
 .cancel {
-    display: none;
+    font-size: 50px;
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
+
+.highlighter {
+    color: #d3d3d3;
+    background-color: #ec5242;
+    border: 1px solid #c2665e;
+    font-size: 30px;
+    width: 300px;
+    padding: 30px;
+    margin-top: 70px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .headline {
