@@ -24,20 +24,16 @@ Mobile and desktop version setup of website showcasing the home page and about p
 
 ## Getting Started
 
-**This is an example of how you may setup a mobile display for a website.**
+**This is an example of how you can setup a mobile and desktop display for a website.**
 **Modify this file to match your project, remove sections that don't apply.
-
-## Project Development Phases
-
-The project was developed within three (3) days with the following mile-stones as a roadmap;
 
 ## Author
 
 👤 **Ngozika Nwocha**
 
-- GitHub: [@praisespjmt](https://github.com/NgozikaNwocha)
-- Twitter: [@praisespjmt](https://twitter.com/NgozikaNwocha)
-- LinkedIn: [Praises Musa Tula](https://www.linkedin.com/in/NgozikaNwocha)
+- GitHub: [@ngozikanwocha](https://github.com/NgozikaNwocha)
+- Twitter: [@ngozikanwocha](https://twitter.com/NgozikaNwocha)
+- LinkedIn: [Ngozika Nwocha](https://www.linkedin.com/in/NgozikaNwocha)
 
 ## 🤝 Contributing
 
