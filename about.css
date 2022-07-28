@@ -510,12 +510,17 @@ h5 {
     }
     
     .highlight {
-        border: 4px solid #ec5242;
         padding: 5px 10px 5px 10px;
     }
     
     .highlight a {
         color: #ec5242;
+        white-space: nowrap;
+        text-decoration: none;
+        border: 3px solid #ec5242;
+        font-size: 15px;
+        padding-inline: 0.2rem;
+        padding-block: 0.2rem;
     }
 
     .chess-players {
