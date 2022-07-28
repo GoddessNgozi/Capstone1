@@ -216,24 +216,10 @@ h5 {
     flex: 50%;
 }
 
-/*.player-pic {
-    background-image: url(images/board-bg.svg);
-    background-size: 50px;
-    background-repeat: no-repeat;
-    background-position: top left;
-    width: 100%;
-    height: 125px;
-    position: relative;
-    margin-right: 15px;
-}*/
-
 .player-pic img {
     width: 110px;
     height: 110px;
     margin-right: 15px;
-    /*position: absolute;
-    bottom: 0;
-    right: 0;*/
 }
 
 .ruler {
@@ -261,7 +247,6 @@ h5 {
     padding-top: 12px;
     padding-bottom: 12px;
 }
-
 
 /* ABOUT PAGE*/
 .head-liner {
@@ -547,7 +532,6 @@ h5 {
     }
 
     /*ABOUT PAGE*/
-
     .about-focus {
         width: 63%;
         padding: 4% 2% 4% 2%;

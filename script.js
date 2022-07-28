@@ -1,4 +1,4 @@
-
+// MENU
 const hamburger = document.getElementById('hamburger');
 const closeMenu = document.getElementById('close');
 const menu = document.getElementById('mobile-menu');
@@ -18,15 +18,8 @@ function closeMobileMenu() {
 hamburger.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', closeMobileMenu);
 
-
-
-
-
-
 // FEATURED PLAYERS
 const chessPlayers = document.querySelector('.chess-players');
-
-// Players Dynamic data
 const featuredPlayers = [
   {
     name: 'Fabiano Caruana',
