@@ -20,7 +20,7 @@ Mobile and desktop version setup of website showcasing the home page and about p
 
 ## Presentation Video
 
-[Loom](https://ngozikanwocha.github.io/capstone1/)
+[Loom](https://[(https://loom.com/share/1ac1ecbe8fd342ecbae0203b918cf61d)]
 
 ## Getting Started
 
