@@ -98,6 +98,10 @@ header {
   padding-top: 60px;
 }
 
+.opacity {
+  background: #ffffff3f;
+}
+
 .hello {
   color: #ec5242;
   font-size: 25px;

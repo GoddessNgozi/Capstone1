@@ -82,6 +82,10 @@ header {
   padding-top: 60px;
 }
 
+.opacity {
+  background: #ffffff3f;
+}
+
 .headliner {
   background-image: url(images/checkmate.jpg);
   background-repeat: no-repeat;
